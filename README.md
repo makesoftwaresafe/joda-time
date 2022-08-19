@@ -51,7 +51,7 @@ Various documentation is available:
 
 
 ### Releases
-[Release 2.10.14](https://www.joda.org/joda-time/download.html) is the current latest release.
+[Release 2.11.0](https://www.joda.org/joda-time/download.html) is the current latest release.
 This release is considered stable and worthy of the 2.x tag.
 It depends on JDK 1.5 or later.
 
@@ -62,13 +62,13 @@ Available in the [Maven Central repository](https://search.maven.org/search?q=g:
 <dependency>
   <groupId>joda-time</groupId>
   <artifactId>joda-time</artifactId>
-  <version>2.10.14</version>
+  <version>2.11.0</version>
 </dependency>
 ```
 
 **Gradle configuration:**
 ```groovy
-compile 'joda-time:joda-time:2.10.14'
+compile 'joda-time:joda-time:2.11.0'
 ```
 
 ![Tidelift dependency check](https://tidelift.com/badges/github/JodaOrg/joda-time)
@@ -103,6 +103,17 @@ Any donations to support the project are accepted via [OpenCollective](https://o
 
 To report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security).
 Tidelift will coordinate the fix and disclosure.
+
+
+### Development and Contributions
+Joda-Time is developed using standard [GitHub tools](https://github.com/JodaOrg/joda-time).
+A [checkstyle](https://checkstyle.sourceforge.io/) file is available, and PRs must comply with it.
+The project can be built using [Apache Maven](https://maven.apache.org/), such as <code>mvn clean install</code>.
+Continuous Integration takes place using [GitHub Actions](https://github.com/JodaOrg/joda-time/actions).
+Units tests are written in [JUnit](https://junit.org/) and run as part of the build and continuous integration.
+Changes via PR must include appropiate test coverage.
+
+Note that Joda-Time is considered to be a largely “finished” project. No major enhancements are planned. If using Java SE 8, please migrate to java.time (JSR-310).
 
 
 ### Release process
